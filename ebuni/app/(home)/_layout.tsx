@@ -12,7 +12,7 @@ const HomeRootLayout = () => {
         title: 'Home',
         tabBarIcon: ({ color }) => <FontAwesome name="home" size={24} color={color} />,
       }} />
-      <Tabs.Screen name="search" options={{
+      <Tabs.Screen name="sell" options={{
         title: 'Sell',
         headerShown: true,
         tabBarIcon: ({ color }) => <AntDesign name="plussquare" size={24} color={color} />,
@@ -22,7 +22,7 @@ const HomeRootLayout = () => {
         headerShown: true,
         tabBarIcon: ({ color }) => <FontAwesome name="heart" size={24} color={color} />
       }} />
-        <Tabs.Screen name="inbox" options={{
+        <Tabs.Screen name="messages" options={{
         title: 'Messages',
         headerShown: true,
         tabBarIcon: ({ color }) => <MaterialIcons name="message" size={24} color={color} />

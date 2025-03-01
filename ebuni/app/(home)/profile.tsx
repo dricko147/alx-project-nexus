@@ -15,9 +15,9 @@ const Profile = () => {
             <Image source={require("@/assets/images/user-image.png")} />
             <View>
               <Text className=" font-semibold text-xl text-white">
-                Cole Baidoo
+                Fred Eseka
               </Text>
-              <Text className="text-sm font-thin text-white">@block_cs</Text>
+              <Text className="text-sm font-thin text-white">@Caruso147</Text>
             </View>
           </View>
           <Feather name="edit-3" size={24} color="white" />
@@ -49,15 +49,15 @@ const Profile = () => {
               </View>
               <View>
                 <Text className=" text-lg font-normal mb-2">
-                  Saved Beneficiary
+                  My Balance
                 </Text>
                 <Text className=" font-thin text-gray-700">
-                  Manage your saved accounts
+                  ₦ 0
                 </Text>
               </View>
             </View>
             <MaterialIcons
-              name="keyboard-arrow-right"
+              name="account-balance-wallet"
               size={34}
               color="black"
             />
@@ -76,7 +76,7 @@ const Profile = () => {
                   Face ID / Touch ID
                 </Text>
                 <Text className=" font-thin text-gray-700">
-                  Make Changes to your account
+                  Mobile Authentication
                 </Text>
               </View>
             </View>
@@ -118,7 +118,7 @@ const Profile = () => {
               <View>
                 <Text className=" text-lg font-normal mb-2">Log out</Text>
                 <Text className=" font-thin text-gray-700">
-                  Further secure your account for safety
+                  Safely Sign out of your account
                 </Text>
               </View>
             </View>
