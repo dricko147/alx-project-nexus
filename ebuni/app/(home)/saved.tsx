@@ -1,11 +1,54 @@
-import { View, Text } from "react-native";
+import React from 'react';
+import { View, Text, FlatList, StyleSheet } from 'react-native';
 
-const Saved = () => {
-  return (
-      <View>
-        <Text>Saved Screen</Text>
-      </View>
-  )
+interface SavedItem {
+    id: string;
+    title: string;
+    price: number;
 }
 
-export default Saved;
+const savedItems: SavedItem[] = [
+    { id: '1', title: 'Item 1', price: 29.99 },
+    { id: '2', title: 'Item 2', price: 49.99 },
+    { id: '3', title: 'Item 3', price: 19.99 },
+];
+
+const saved: React.FC = () => {
+    const renderItem = ({ item }: { item: SavedItem }) => (
+        <View style={styles.item}>
+            <Text>{item.title}</Text>
+            <Text>${item.price.toFixed(2)}</Text>
+        </View>
+    );
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.header}>Saved Items</Text>
+            <FlatList
+                data={savedItems}
+                renderItem={renderItem}
+                keyExtractor={item => item.id}
+            />
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 20,
+        backgroundColor: '#fff',
+    },
+    header: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+    item: {
+        padding: 15,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ccc',
+    },
+});
+
+export default saved;
