@@ -1,6 +1,7 @@
 import { AntDesign, EvilIcons, Feather, FontAwesome, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { blue } from "react-native-reanimated/lib/typescript/Colors";
+import "@/styles/global.css";
 
 const HomeRootLayout = () => {
   return (

@@ -2,13 +2,13 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        height: 400,
+        height: 300,
         borderRadius: 10,
         overflow: "hidden",
         marginBottom: 16,
     },
     overlay: {
-        height: 400,
+        height: 300,
         backgroundColor: "rgba(0,0,0,0.3)",
         padding: 16,
         justifyContent: "space-between",

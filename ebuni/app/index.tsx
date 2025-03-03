@@ -30,7 +30,7 @@ export default function Index() {
             </View>
 
             <View style={styles.textGroup}>
-            <Text style={styles.textLarge}>Run business online</Text>
+            <Text style={styles.textMedium}>Run business online</Text>
             <Text style={styles.textSmall}>Sell brand new or used goods</Text>
             </View>
               
@@ -86,6 +86,14 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 40,
     fontWeight: 800,
+    textAlign: "center",
+    marginBottom: 12,
+  },
+
+  textMedium: {
+    color: "#fff",
+    fontSize: 32,
+    fontWeight: 600,
     textAlign: "center",
     marginBottom: 12,
   },

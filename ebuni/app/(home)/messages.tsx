@@ -1,31 +1,41 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, FlatList, StyleSheet } from 'react-native';
+import { View, TextInput, StyleSheet, FlatList, Text } from 'react-native';
 
-const messages: React.FC = () => {
-    const [message, setMessage] = useState('');
-    const [messages, setMessages] = useState<string[]>([]);
+interface Message {
+    id: number;
+    text: string;
+}
 
-    const sendMessage = () => {
-        if (message.trim()) {
-            setMessages([...messages, message]);
-            setMessage('');
-        }
-    };
+const ChatPage: React.FC = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [messages] = useState<Message[]>([
+        { id: 1, text: 'Hey there!' },
+        { id: 2, text: 'How are you doing?' },
+        { id: 3, text: 'What’s up?' },
+        { id: 4, text: 'Let’s catch up soon!' },
+    ]);
+
+    const filteredMessages = messages.filter(message =>
+        message.text.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     return (
         <View style={styles.container}>
-            <FlatList
-                data={messages}
-                renderItem={({ item }) => <Text style={styles.message}>{item}</Text>}
-                keyExtractor={(item, index) => index.toString()}
-            />
             <TextInput
-                style={styles.input}
-                value={message}
-                onChangeText={setMessage}
-                placeholder="Type your message"
+                style={styles.searchBar}
+                placeholder="Search in messages..."
+                value={searchTerm}
+                onChangeText={setSearchTerm}
             />
-            <Button title="Send" onPress={sendMessage} />
+            <FlatList
+                data={filteredMessages}
+                keyExtractor={item => item.id.toString()}
+                renderItem={({ item }) => (
+                    <View style={styles.messageContainer}>
+                        <Text>{item.text}</Text>
+                    </View>
+                )}
+            />
         </View>
     );
 };
@@ -33,20 +43,21 @@ const messages: React.FC = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 20,
+        padding: 10,
+        backgroundColor: '#fff',
     },
-    message: {
+    searchBar: {
+        padding: 10,
+        borderColor: '#ccc',
+        borderWidth: 1,
+        borderRadius: 5,
+        marginBottom: 10,
+    },
+    messageContainer: {
         padding: 10,
         borderBottomWidth: 1,
-        borderBottomColor: '#ccc',
-    },
-    input: {
-        height: 40,
-        borderColor: 'gray',
-        borderWidth: 1,
-        marginBottom: 10,
-        paddingLeft: 5,
+        borderBottomColor: '#eee',
     },
 });
 
-export default messages;
+export default ChatPage;

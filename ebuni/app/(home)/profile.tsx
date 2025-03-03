@@ -4,6 +4,9 @@ import Feather from "@expo/vector-icons/Feather";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import "@/styles/global.css";
+
+
 
 const Profile = () => {
   return (
@@ -45,7 +48,7 @@ const Profile = () => {
           <Pressable className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center gap-4">
               <View className="w-12 h-12 bg-[#0601B4]/10 items-center justify-center rounded-full ">
-                <FontAwesome6 name="user" size={24} color="#0601B4" />
+                <MaterialIcons name="account-balance-wallet" size={24} color="#0601B4" />
               </View>
               <View>
                 <Text className=" text-lg font-normal mb-2">
@@ -57,7 +60,7 @@ const Profile = () => {
               </View>
             </View>
             <MaterialIcons
-              name="account-balance-wallet"
+              name="keyboard-arrow-right"
               size={34}
               color="black"
             />
@@ -129,6 +132,7 @@ const Profile = () => {
             />
           </Pressable>
         </View>
+
 
         <Text className=" text-black  text-xl font-normal mb-6">More</Text>
 

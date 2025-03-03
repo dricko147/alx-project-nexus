@@ -9,7 +9,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "USA"
       },
       rate: 4.76,
-      currency: "$",
+      currency: "₦",
       amount: 620,
       favorite: false
     },
@@ -21,7 +21,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "Mexico"
       },
       rate: 4.85,
-      currency: "$",
+      currency: "₦",
       amount: 750,
       favorite: true
     },
@@ -33,7 +33,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "Australia"
       },
       rate: 4.92,
-      currency: "$",
+      currency: "₦",
       amount: 900,
       favorite: false
     },
@@ -45,7 +45,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "France"
       },
       rate: 4.78,
-      currency: "$",
+      currency: "₦",
       amount: 680,
       favorite: false
     },
@@ -57,7 +57,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "Indonesia"
       },
       rate: 4.88,
-      currency: "$",
+      currency: "₦",
       amount: 1200,
       favorite: true
     },
@@ -69,7 +69,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "UAE"
       },
       rate: 4.95,
-      currency: "$",
+      currency: "₦",
       amount: 2500,
       favorite: false
     },
@@ -81,7 +81,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "Thailand"
       },
       rate: 4.81,
-      currency: "$",
+      currency: "₦",
       amount: 1500,
       favorite: false
     },
@@ -93,7 +93,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "Maldives"
       },
       rate: 4.89,
-      currency: "$",
+      currency: "₦",
       amount: 850,
       favorite: false
     },
@@ -105,7 +105,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "USA"
       },
       rate: 4.83,
-      currency: "$",
+      currency: "₦",
       amount: 720,
       favorite: false
     },
@@ -117,7 +117,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         country: "Greece"
       },
       rate: 4.90,
-      currency: "$",
+      currency: "₦",
       amount: 780,
       favorite: true
     }
@@ -125,16 +125,18 @@ const SAMPLE_DATA : PropertyListingProps[] = [
 
 
 const FILTERS: string [] = [
-    "Mansion",
-    "CountrySide",
-    "Villa",
-    "Tropical",
-    "New",
-    "Amazing",
-    "Beachfront",
-    "Luxury",
-    "Family-Friendly",
-    "Pet-Friendly",
-    "Secluded"
+    "Trending",
+    "Vehicles",
+    "Property",
+    "Phones & Tablets",
+    "Electronics",
+    "Home Appliances",
+    "Health & Beauty",
+    "Fashion",
+    "Services",
+    "Jobs",
+    "Babies & Kids",
+    "Agriculture & Food",
+    "Pets"
   ];
   export { SAMPLE_DATA, FILTERS }

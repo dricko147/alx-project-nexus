@@ -72,6 +72,24 @@ const styles = StyleSheet.create({
         height: 100,
         marginVertical: 15,
     },
+
+    Button: {
+        borderColor: "7EF4CC",
+        borderWidth: 2,
+        borderRadius: 40,
+        paddingVertical: 15,
+        paddingHorizontal: 5,
+        fontSize: 20,
+        backgroundColor: "7EF4CC",
+        flex: 1,
+        alignItems: "center",
+      },
+    
+      ButtonGroup: {
+        flexDirection: "row",
+        gap: 20,
+        paddingHorizontal: 20,
+      },
 });
 
 export default sell;

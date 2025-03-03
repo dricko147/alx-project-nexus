@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
         paddingBottom: 4,
     },
     searchButton: {
-        backgroundColor: "orange",
+        backgroundColor: "7EF4CC",
         padding: 10,
         borderRadius: 20,
         alignItems: "center",
@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
         marginVertical: 16,
     },
     showMoreButton: {
-        backgroundColor: "black",
+        backgroundColor: "7EF4CC",
         paddingVertical: 10,
         paddingHorizontal: 25,
         borderRadius: 20,
