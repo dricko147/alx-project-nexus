@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         borderBottomColor: '#eee'
     },
     headerContainer: {
-        backgroundColor: "#0C8057",
+        backgroundColor: "#7EF4CC",
         paddingTop: Platform.OS === "ios" ? StatusBar.currentHeight : 0,
         paddingBottom: 16,
         paddingHorizontal: 16,
@@ -16,7 +16,13 @@ export const styles = StyleSheet.create({
     searchGroup: {
         marginBottom: 16,
     },
-    searchFormGroup: {
+    searchContainer: {
+    padding: 10,
+borderBottomWidth: 1,
+borderBottomColor: '#eee'
+    },
+    searchFormGroup:
+     {
         flexDirection: "row",
         alignItems: "center",
         backgroundColor: "#F0F0F0",
@@ -72,5 +78,5 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: "600",
     },
+    
 });
-

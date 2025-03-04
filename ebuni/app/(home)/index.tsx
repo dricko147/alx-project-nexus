@@ -32,7 +32,7 @@ const Home = () => {
 
       <View
         style={{
-          height: 72,
+          height: 120,
           backgroundColor: "#7EF4CC",
         }}
       >
