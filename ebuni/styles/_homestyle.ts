@@ -4,8 +4,8 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 10,
-        borderBottomWidth: 1,
-        borderBottomColor: '#eee'
+        borderBottomWidth: 3,
+        borderBottomColor: '#eee',
     },
     headerContainer: {
         backgroundColor: "#0C8057",
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
         paddingBottom: 4,
     },
     searchButton: {
-        backgroundColor: "7EF4CC",
+        backgroundColor: "grey",
         padding: 10,
         borderRadius: 20,
         alignItems: "center",
@@ -47,29 +47,29 @@ export const styles = StyleSheet.create({
     },
     filterGroup: {
         flexDirection: "row",
-        alignItems: "center",
-        paddingVertical: 8,
+        alignItems: "flex-start",
+        paddingVertical: 10,
     },
     filterContainer: {
         alignItems: "center",
-        marginHorizontal: 10,
+        marginHorizontal: 6,
     },
     listingContainer: {
-        flex: 1,
+        flex: 2,
     },
     paginationContainer: {
         alignItems: "center",
-        marginVertical: 16,
+        marginVertical: 40,
     },
     showMoreButton: {
-        backgroundColor: "7EF4CC",
+        backgroundColor: "black",
         paddingVertical: 10,
         paddingHorizontal: 25,
         borderRadius: 20,
     },
     showMoreButtonText: {
-        color: "#fff",
-        fontSize: 14,
+        color: "white",
+        fontSize: 18,
         fontWeight: "600",
     },
 });

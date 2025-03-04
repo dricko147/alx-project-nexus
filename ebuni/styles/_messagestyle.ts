@@ -3,7 +3,7 @@ import { StyleSheet, Platform, StatusBar } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 10,
+        padding: 5,
         borderBottomWidth: 1,
         borderBottomColor: '#eee'
     },
@@ -26,8 +26,8 @@ borderBottomColor: '#eee'
         flexDirection: "row",
         alignItems: "center",
         backgroundColor: "#F0F0F0",
-        borderRadius: 8,
-        padding: 10,
+        borderRadius: 4,
+        padding: 5,
     },
     searchControlGroup: {
         flex: 1,
@@ -40,13 +40,13 @@ borderBottomColor: '#eee'
     searchControl: {
         marginTop: 4,
         borderBottomWidth: 1,
-        borderColor: "#ddd",
+        borderColor: "#grey",
         paddingBottom: 4,
     },
     searchButton: {
-        backgroundColor: "7EF4CC",
+        backgroundColor: "black",
         padding: 10,
-        borderRadius: 20,
+        borderRadius: 25,
         alignItems: "center",
         justifyContent: "center",
         marginLeft: 8,
