@@ -8,10 +8,10 @@ const SAMPLE_DATA : PropertyListingProps[] = [
         city: "Miami",
         country: "USA"
       },
-      rate: 4.76,
+      rate: 4.5,
       currency: "₦",
       amount: 620,
-      favorite: false
+      favorite: true
     },
     {
       propertyName: "Sunset Paradise Villa",
@@ -23,7 +23,7 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.85,
       currency: "₦",
       amount: 750,
-      favorite: true
+      favorite: false
     },
     {
       propertyName: "Golden Sands Retreat",
