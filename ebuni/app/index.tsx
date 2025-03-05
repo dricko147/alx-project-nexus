@@ -13,7 +13,7 @@ export default function Index() {
           resizeMode="cover"
         >
           <View style={styles.container}>
-            {/* COMPANY LOGO */}
+            {/* COMPANY LOGO ****/}
             <View style={styles.companyLogo}>
               <Image source={require("@/assets/images/Logo.png")} />
             </View>
