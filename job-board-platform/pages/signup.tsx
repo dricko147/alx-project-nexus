@@ -1,6 +1,6 @@
 import Button from "@/components/commons/Button";
 import { useRouter } from "next/router";
-const Home: React.FC = () => {
+const Signup: React.FC = () => {
   const router = useRouter();
 
   return (
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         }}
       >
         <div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-8">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8">
             Discover Your Dream{" "}
             <span className="text-[#E2D609]">Job</span>
           </h1>
@@ -45,4 +45,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Signup;
