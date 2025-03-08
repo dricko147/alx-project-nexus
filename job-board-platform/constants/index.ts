@@ -1,10 +1,10 @@
 import { JobProps } from "../interfaces";
 import { ImageProps } from "../interfaces";
 export const SAMPLEIMAGES: ImageProps[] = [
-  { image: require("../public/images/company_a.png")},
-  { image: require("../public/images/company_b.png")},
-  { image: require("../public/images/company_c.png")},
-  { image: require("../public/images/company_d.png")},
+  { image: require("@/public/company_a.png")},
+  { image: require("@/public/company_b.png")},
+  { image: require("@/public/company_c.png")},
+  { image: require("@/public/company_d.png")},
 ]
 
 export const JOBSLISTINGSAMPLE: JobProps[] = [
