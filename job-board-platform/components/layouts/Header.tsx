@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <h2 className="text-xl md:text-4xl font-semibold">Job<span className="text-[#E2D609]">Naija</span></h2>
         <nav className="hidden md:flex flex-1 justify-center space-x-8">
           <Link href="/" className="hover:text-[#E2D609] px-4 md:px-8 text-xl transition-colors duration-300 font-semibold">Home</Link>
-          <Link href="/jobs" className="hover:text-[#E2D609] px-4 md:px-8 text-xl transition-colors duration-300 font-semibold">Jobs</Link>
+          <Link href="/jobs/all_jobs" className="hover:text-[#E2D609] px-4 md:px-8 text-xl transition-colors duration-300 font-semibold">Jobs</Link>
           <Link href="/contact" className="hover:text-[#E2D609] px-4 md:px-8 text-xl transition-colors duration-300 font-semibold">Contact</Link>
         </nav>
         <div className="flex md:hidden">
